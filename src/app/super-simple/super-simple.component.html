@@ -1,0 +1,90 @@
+<div class="main">
+    <div class="leftMain">
+        <!-- <img class="logoImg" src="/assets/logo.png"/> -->
+        <div class="simpleTxt">We make it Super Simple</div>
+        <div class="line"></div>
+        <img class="collectImg" src="/assets/collect_img.png"/>
+        <img class="blobSmallImg" src="/assets/blob-small.svg"/>
+        <img class="dotImg dotPos" src="/assets/accounting_dots.svg"/>
+    </div>
+
+    <div class="rightMain">
+        <img class="circleImg" src="/assets/circle.svg"/>
+        <img class="dotImg dotPos" src="/assets/accounting_dots.svg"/>
+        <div class="calculatorMain">
+            <div class="calculatorCard">
+                <div class="eligibleTxt">Eligibility Calculator</div>
+                <div class="Calculation">
+                    <div class="descTxt">Monthly Income</div>
+                    <div class="loanTxt">&#8377;  {{monthlyValue | number}}</div>
+                    <mat-slider
+                    class="sliderRange"
+                    [max]="300000"
+                    [min]="100000"
+                    [step]="1"
+                    [thumbLabel]="false"
+                    [(ngModel)]="monthlyValue"
+                    aria-labelledby="monthly-label">
+                    </mat-slider>
+                    <div class="mt-6">
+                        <span class="rangeTxt"><b>&#8377; 1,00,000</b></span>
+                        <span class="rangeTxt rangeRightTxt"><b>&#8377; 3,00,000</b></span>
+                    </div>
+                </div>
+                <div class="Calculation">
+                    <div class="descTxt">Monthly Expense</div>
+                    <div class="loanTxt">&#8377;  {{monthlyExpense | number}}</div>
+                    <mat-slider
+                    class="sliderRange"
+                    [max]="100000"
+                    [min]="0"
+                    [step]="1000"
+                    [thumbLabel]="false"
+                    [(ngModel)]="monthlyExpense"
+                    aria-labelledby="expense-label"></mat-slider>
+                </div>
+                <div class="Calculation">
+                    <div class="descTxt">Repayment Tenure</div>
+                    <mat-form-field appearance="fill" class="fullWidth">
+                        <mat-select [formControl]="toppings">
+                            <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                        </mat-select>
+                        <!-- <select matNativeControl required>
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="mercedes">Mercedes</option>
+                          <option value="audi">Audi</option>
+                        </select> -->
+                      </mat-form-field>
+                </div>
+                <div class="Calculation mt30">
+                    <span class="descTxt">Do you have any existing loans?</span>
+                    <mat-slide-toggle class="switch" [(ngModel)]="checked"></mat-slide-toggle>
+                </div>
+                <div class="Calculation">
+                    <div class="descTxt">EMI of existing loan (optional)</div>
+                    <div class="existingLoan">
+                        <span class="loanTxt"><b>&#8377;</b></span>
+                        <input type="tel" value="0" min="1" id="loanAmount" class="input loanTxt"/>
+                    </div>
+                    <div class="line"></div>
+                    <!-- <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>EMI of existing loan (optional)</mat-label>
+                        <input matInput>
+                    </mat-form-field> -->
+                </div>
+            </div>
+            <div class="moneyCard">
+                <div class="txtBotBorder">
+                    <div class="headTxt">Loan Amount</div>
+                    <div class="amountTxt">&#8377; 1,00,000</div>
+                </div>
+                <div class="txtBotBorder">
+                    <div class="headTxt">Your EMI will be</div>
+                    <div class="amountTxt">&#8377; 15,000</div>
+                </div>
+                <button id="getMoney" class="moneyBtn">GET MONEY</button>
+            </div>
+        </div>
+    </div>
+</div>

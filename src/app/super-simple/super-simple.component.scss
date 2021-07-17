@@ -1,0 +1,269 @@
+@import "../../logic/pxtovwConverter.scss";
+
+.main {
+    background: #ffffff;
+    display: flex;
+    margin-bottom: widthtovw(192);
+    margin-top: widthtovw(270);
+
+    .dotImg {
+        width: widthtovw(430);
+        height: widthtovw(70);
+        position: absolute;
+    }
+
+    .leftMain {
+        margin-right: widthtovw(64.26);
+
+        .logoImg{
+            height: widthtovw(123);
+            width: widthtovw(123);
+            margin: 1.4vw 0 6.25vw 6.25vw;
+        }
+        .simpleTxt{
+            color: #222222;
+            width: widthtovw(407);
+            font-size: widthtovw(40);
+            margin-bottom: widthtovw(8);
+            margin-left: widthtovw(189);
+        }
+        .line{
+            width: widthtovw(236);
+            height: widthtovw(8);
+            background: #000000;
+            border-radius: widthtovw(13);
+            margin-bottom: widthtovw(82);
+            margin-left: widthtovw(192);
+        }
+        .collectImg{
+            width: widthtovw(652);
+            height: widthtovw(365);
+            margin-left: widthtovw(136);
+            z-index: 1;
+            position: relative;
+        }
+        .blobSmallImg {
+            width: widthtovw(571);
+            height: widthtovw(572);
+            position: absolute;
+            top: widthtovw(213);
+            left: widthtovw(-179);
+        }
+        .dotPos{
+            top: widthtovw(796);
+            left: widthtovw(462);
+        }
+    }
+
+    .rightMain {
+
+        flex: 1;
+        margin-bottom: widthtovw(19.39);
+
+        .circleImg {
+            top: widthtovw(-227.90);
+            left: widthtovw(852);
+            width: widthtovw(1183);
+            height: widthtovw(1192);
+            position: absolute;
+        }
+        .dotPos{
+            top: widthtovw(936);
+            right: widthtovw(32);
+        }
+        .calculatorMain{
+            display: flex;
+            margin-right: widthtovw(132);
+            justify-content: flex-end;
+
+            .calculatorCard{
+                padding: widthtovw(50);
+                height: widthtovw(675);
+                width: widthtovw(350);
+                box-shadow: 0px 0px widthtovw(30) #2321321F;
+                border: 1px solid #FFFFFF;
+                border-radius: widthtovw(20);
+                z-index: 1;
+                position: relative;
+                background: #ffffff;
+                padding-bottom: 0 !important;
+
+                .eligibleTxt{
+                    background: #f7f7fb;
+                    color: #222222;
+                    line-height: widthtovw(55);
+                    font-size: widthtovw(21);
+                    text-align: center;
+                    margin-left: widthtovw(-50);
+                    margin-top: widthtovw(-50);
+                    width: widthtovw(450);
+                    border-radius: widthtovw(20) widthtovw(20) 0 0;
+                }
+                .Calculation{
+                    margin-top: widthtovw(50);
+
+                    .descTxt{
+                        color: rgba(0, 0, 0, 0.6);;
+                        line-height: widthtovw(20);
+                        font-size: widthtovw(16);
+                        text-align: left;
+                        margin-bottom: widthtovw(6);
+                    }
+                    .switch{
+                        float: right;
+                    }
+                    .mat-slide-toggle-thumb {
+                        height: 14px;
+                        width: 14px;
+                        margin-top: 3px;
+                        border-radius: 50%;
+                    }
+                    .existingLoan{
+                        display: flex;
+                    }
+                    .loanTxt{
+                        color: #222222;
+                        line-height: widthtovw(24);
+                        font-size: widthtovw(22);
+                        text-align: left;
+                    }
+                    .input{
+                        border: none;
+                        outline: none;
+                        flex: 1;
+                        font-weight: bold;
+                        margin-left: widthtovw(6);
+                    }
+                    .line{
+                        background: #00000033;
+                        width: 100%;
+                        height: widthtovw(2);
+                        margin-top: widthtovw(6);
+                    }
+                    .sliderRange{
+                        width: 100%;
+                        height: widthtovw(22);
+                        margin-top: widthtovw(-20);
+                        
+                    .mat-accent .mat-slider-track-fill {
+                        background-color: red !important;
+                    }
+
+                    .mat-slider-thumb-label {
+                        background-color: blue !important;
+
+                    }
+
+                    .mat-slider-thumb {
+                        background-color: red !important;
+                    }
+                    }
+                    .rangeTxt{
+                        color: #00000033;
+                        line-height: widthtovw(18);
+                        font-size: widthtovw(14);
+                        text-align: left;
+                    }
+                    .rangeRightTxt{
+                        float: right !important;
+                        margin-top: widthtovw(6);
+                    }
+                    .mt-6{
+                        margin-top: widthtovw(6);
+                        padding: 0 widthtovw(6);
+                    }
+                    .fullWidth{
+                        width: 100%;
+                    }
+                    
+                }
+            }
+            .mt30{
+                margin-top: widthtovw(5) !important;
+            }
+            .moneyCard{
+                padding: widthtovw(50);
+                height: widthtovw(375);
+                width: widthtovw(150);
+                box-shadow: 0px 0px widthtovw(30) #2321321F;
+                border: 1px solid #663399;
+                border-radius: 0 widthtovw(20) widthtovw(20) 0;
+                z-index: 1;
+                position: relative;
+                background: #663399;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-left: 6px;
+
+                .txtBotBorder{
+                    margin-bottom: widthtovw(50);
+                    width: 100%;
+                }
+                .headTxt{
+                    color: rgba(255,255,255, 0.6);
+                    line-height: widthtovw(25);
+                    font-size: widthtovw(21);
+                    text-align: center;
+                    margin-bottom: widthtovw(6);
+                }
+                .amountTxt{
+                    color: #ffffff;
+                    line-height: widthtovw(30);
+                    font-size: widthtovw(30);
+                    text-align: center;
+                }
+                .moneyBtn{
+                    width: widthtovw(200);
+                    height: widthtovw(50);
+                    background: #FFFFFF;
+                    border: widthtovw(2) solid #FFFFFF;
+                    border-radius: widthtovw(24);
+                    box-shadow: 0px 0px widthtovw(20) #00000033;
+                    text-align: center;
+                    letter-spacing: 0px;
+                    color: #663399;
+                    font-size: widthtovw(16);
+                }
+                .moneyBtn:hover{
+                    background: #663399 !important;
+                    color: #ffffff !important;
+                }
+            }
+        }
+    }
+}
+:host ::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: #663399 ;
+}
+
+:host ::ng-deep  .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: #ffffff ;
+    margin-left: widthtovw(5);
+}
+
+:host ::ng-deep  .mat-slider .mat-slider-thumb {
+    background-color: #663399 ;
+    margin-left: widthtovw(5);
+}
+
+:host ::ng-deep .mat-accent .mat-slider-track-fill {
+    background-color: #663399 !important;
+}
+
+:host ::ng-deep  .mat-slide-toggle.mat- .mat-slide-toggle-thumb {
+    height: 14px;
+    width: 14px;
+    margin-top: 3px;
+    border-radius: 50%;
+}
+.mat-select-value-text {
+    white-space: nowrap;
+    font-size: 14px;
+}
+.mat-form-field-infix {
+    padding: .5em 0;
+    border: none;
+}

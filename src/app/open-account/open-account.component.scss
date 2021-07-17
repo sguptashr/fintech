@@ -1,0 +1,113 @@
+@import "../../logic/pxtovwConverter.scss";
+.main{
+    padding: 0 0 widthtovw(83) widthtovw(190.68);
+    display: flex;
+
+    .waveImg{
+        width: widthtovw(1920);
+        height: widthtovw(936);
+        position: absolute;
+        top: widthtovw(1209);
+        left: 0;
+    }
+
+    .mainFirst {
+        margin-right: widthtovw(48);
+    }
+    .mainSecond {
+        margin-right: widthtovw(138);
+        margin-top: widthtovw(124);
+
+        .cardBGColor{
+            background: #9F62C9 !important;
+            opacity: 0.7;
+        }
+        .cardBGColor:hover{
+            background: #663399 !important;
+            color: #ffffff !important;
+        }
+        .cardTxtMColor{
+            color: #FFFFFF !important;
+        }
+    }
+
+    .mainThird {
+        margin-top: widthtovw(240);
+        z-index: 1;
+        position: relative;
+
+        .businessTxt{
+            color: #222222;
+            line-height: widthtovw(49);
+            width: widthtovw(430);
+            font-size: widthtovw(40);
+            margin-bottom: widthtovw(52.82);
+        }
+        .line{
+            width: widthtovw(120);
+            height: widthtovw(6);
+            background: #707070;
+            margin-bottom: widthtovw(33);
+        }
+        .subTxt{
+            color: #777777;
+            line-height: widthtovw(22);
+            width: widthtovw(490);
+            font-size: widthtovw(18);
+            margin-bottom: widthtovw(81);
+        }
+        .openBtn{
+            width: widthtovw(279);
+            height: widthtovw(45);
+            border: widthtovw(2) solid #663399;
+            border-radius: widthtovw(24);
+            box-shadow: 0px 0px widthtovw(20) #00000033;
+            text-align: center;
+            letter-spacing: 0px;
+            color: #663399;
+            font-size: widthtovw(18);
+            line-height: widthtovw(22);
+            background: #ffffff;
+        }
+        .openBtn:hover{
+            background: #663399 !important;
+            color: #ffffff !important;
+        }
+    }
+
+    .accountCard{
+        padding: widthtovw(34);
+        box-shadow: 0px 0px widthtovw(30) #2321321F;
+        border: 1px solid #FFFFFF;
+        border-radius: widthtovw(20);
+        margin-bottom: widthtovw(60);
+        z-index: 1;
+        position: relative;
+        background: #ffffff;
+        color: #999999;
+
+        .cardImg{
+            width: widthtovw(90);
+            height: widthtovw(90);
+            margin-bottom: widthtovw(19);
+        }
+        .cardTxt{
+            line-height: widthtovw(19);
+            width: widthtovw(323);
+            font-size: widthtovw(15);
+            margin-bottom: widthtovw(8);
+        }
+        .txtcolor{
+            color: #333333 !important;
+            margin-bottom: widthtovw(3);
+        }
+    }
+    .accountCard:hover{
+        background: #663399 !important;
+        color: #ffffff !important;
+    }
+    .accountCard:hover .txtcolor{
+        font-weight: bold !important;
+        color: #ffffff !important;
+    }
+}

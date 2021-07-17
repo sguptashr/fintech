@@ -1,0 +1,6 @@
+$onepxvw: 0.052vw;
+
+@function widthtovw ($pixel) {
+    @return $onepxvw * $pixel;
+}
+
