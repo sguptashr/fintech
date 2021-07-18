@@ -26,3 +26,13 @@
 * {
     font-family: "Open Sans", sans-serif;
   }
+  
+  .mat-form-field.mat-focused.mat-primary .mat-form-field-ripple {
+    background-color: #663399 !important;
+  }
+.mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+    color: #663399 !important;
+}
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    padding: .75em .75em 0 0 !important;
+}

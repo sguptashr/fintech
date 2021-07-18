@@ -46,8 +46,8 @@
                 <div class="Calculation">
                     <div class="descTxt">Repayment Tenure</div>
                     <mat-form-field appearance="fill" class="fullWidth">
-                        <mat-select [formControl]="toppings">
-                            <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                        <mat-select [formControl]="fControl">
+                            <mat-option *ngFor="let tenure of tenureList" [value]="tenure">{{tenure}}</mat-option>
                         </mat-select>
                         <!-- <select matNativeControl required>
                           <option value="volvo">Volvo</option>
@@ -64,7 +64,7 @@
                 <div class="Calculation">
                     <div class="descTxt">EMI of existing loan (optional)</div>
                     <div class="existingLoan">
-                        <span class="loanTxt"><b>&#8377;</b></span>
+                        <span class="loanTxt pt2"><b>&#8377;</b></span>
                         <input type="tel" value="0" min="1" id="loanAmount" class="input loanTxt"/>
                     </div>
                     <div class="line"></div>
